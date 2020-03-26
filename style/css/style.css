@@ -61,6 +61,7 @@
   line-height: 30px;
   color: #222222;
   font-family: "Roboto";
+  text-transform: capitalize;
   font-weight: 500;
   text-align: center;
   cursor: pointer;
@@ -462,5 +463,85 @@ template {
 .container {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+
+.features {
+  padding-top: 120px;
+}
+
+.features__unit {
+  position: relative;
+}
+
+.features__unit:last-child {
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.features__icon {
+  position: absolute;
+}
+
+.features__label {
+  font-size: 24px;
+  color: #222222;
+  font-family: "Dosis";
+  font-weight: 500;
+  width: 280px;
+}
+
+.features__sublabel {
+  width: 255px;
+  font-size: 14px;
+  color: #777777;
+  font-family: "Roboto";
+}
+
+.features span {
+  margin-left: 100px;
+  display: block;
+}
+
+.features__line {
+  height: 2px;
+  background-color: #eeeeee;
+  margin-bottom: 120px;
+}
+
+.features__title {
+  font-size: 36px;
+  line-height: 30px;
+  color: #222222;
+  font-family: "Dosis";
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.features__paragraph {
+  width: 513px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.features__paragraph_last {
+  margin-top: 75px;
+  margin-bottom: 35px;
+}
+
+.features__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.features__list li {
+  margin-bottom: 15px;
+}
+
+.features__list li::before {
+  content: url("../../image/features/features-icon.png");
+  margin-right: 25px;
 }
 /*# sourceMappingURL=style.css.map */

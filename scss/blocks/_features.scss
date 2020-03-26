@@ -1,0 +1,66 @@
+.features{
+    padding-top: 120px;
+    &__unit{
+        position: relative;
+        &:last-child{
+            margin-top: 60px;
+            margin-bottom: 120px;
+        }
+    }
+    &__icon{
+        position: absolute;
+    }
+    &__label{
+        font-size: 24px;
+        color: #222222;
+        font-family: "Dosis";
+        font-weight: 500;
+        width: 280px;
+    }
+    &__sublabel{
+        width: 255px;
+        font-size: 14px;
+        color: #777777;
+        font-family: "Roboto";
+    }
+    span{
+        margin-left: 100px;
+        display: block;
+    }
+    &__line{
+        height: 2px;
+        background-color: #eeeeee;
+        margin-bottom: 120px;
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 30px;
+        color: #222222;
+        font-family: "Dosis";
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+    &__paragraph{
+        width: 513px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        font-family: "Roboto";
+        font-weight: 300;
+        &_last{
+            margin-top: 75px;
+            margin-bottom: 35px;
+        }
+    }
+    &__list{
+        padding-left: 0;
+        list-style-type: none;
+        li{
+            margin-bottom: 15px;
+            &::before{
+                content: url('../../image/features/features-icon.png');
+                margin-right: 25px;
+            }
+        }
+    }
+}
