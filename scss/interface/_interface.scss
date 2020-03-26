@@ -2,3 +2,27 @@
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
+
+.section{
+    &__title{
+        font-size: 36px;
+        line-height: 30px;
+        color: #222222;
+        font-family: "Dosis";
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        margin: auto;
+        width: 669px;
+        height: 37px;
+        font-size: 14px;
+        line-height: 24px;
+        color: #777777;
+        font-family: "Roboto";
+        font-weight: 300;
+        text-align: center;
+    }
+}
+

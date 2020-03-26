@@ -465,6 +465,28 @@ template {
   padding-left: 0 !important;
 }
 
+.section__title {
+  font-size: 36px;
+  line-height: 30px;
+  color: #222222;
+  font-family: "Dosis";
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section__subtitle {
+  margin: auto;
+  width: 669px;
+  height: 37px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+}
+
 .features {
   padding-top: 120px;
 }
@@ -543,5 +565,18 @@ template {
 .features__list li::before {
   content: url("../../image/features/features-icon.png");
   margin-right: 25px;
+}
+
+.screenshots {
+  padding-top: 120px;
+  background-color: #f7fafc;
+  padding-bottom: 85px;
+}
+
+.screenshots__image {
+  width: 80%;
+  margin: auto;
+  display: block;
+  margin-top: 85px;
 }
 /*# sourceMappingURL=style.css.map */
