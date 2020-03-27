@@ -1,0 +1,35 @@
+.video{
+    width: 100%;
+    min-height: 400px;
+    background-image: url('../../image/video/video-bg.png');
+    background-position-y: -185px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+    }
+    &__play{
+        width: 75px;
+        height: 75px;
+        border-radius: 37px;
+        background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
+        padding-left: 15px;
+        z-index: 2;
+        cursor: pointer;
+        border: none;
+        outline: none !important;
+        &:active &:focus{
+            outline: none !important;
+        }
+    }
+}

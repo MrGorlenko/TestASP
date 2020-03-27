@@ -704,4 +704,50 @@ template {
   background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
   border: 3px solid rgba(0, 0, 0, 0.1);
 }
+
+.video {
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../../image/video/video-bg.png");
+  background-position-y: -185px;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.video__play {
+  width: 75px;
+  height: 75px;
+  border-radius: 37px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fd712b), to(#f21680));
+  background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
+  padding-left: 15px;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  outline: none !important;
+}
+
+.video__play:active .video__play:focus {
+  outline: none !important;
+}
 /*# sourceMappingURL=style.css.map */
