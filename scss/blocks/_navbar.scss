@@ -7,7 +7,7 @@
     }
     &__links{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
     }
     &__link{
@@ -25,6 +25,12 @@
             border-radius: 17px;
             color: #222222;
             text-decoration: none;
+        }
+        &_features{
+            max-width: 18% !important;
+        }
+        &_pricing{
+            max-width: 18% !important;
         }
         &_download{
             background: #ffffff;

@@ -37,6 +37,7 @@
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 35px;
+  cursor: pointer;
 }
 
 .hero__list li::before {
@@ -70,6 +71,10 @@
 
 .hero__button:active .hero__button:focus {
   outline: none !important;
+}
+
+.hero__button:hover {
+  background-color: #d9d9d9;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -427,9 +432,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -452,6 +457,14 @@ template {
   border-radius: 17px;
   color: #222222;
   text-decoration: none;
+}
+
+.navbar__link_features {
+  max-width: 18% !important;
+}
+
+.navbar__link_pricing {
+  max-width: 18% !important;
 }
 
 .navbar__link_download {
@@ -603,6 +616,7 @@ template {
 .features__list {
   padding-left: 0;
   list-style-type: none;
+  cursor: pointer;
 }
 
 .features__list li {
@@ -640,6 +654,7 @@ template {
 .screenshots__item {
   -webkit-filter: drop-shadow(0px 30px 20px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 30px 20px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
 }
 
 .screenshots__item_first {
@@ -694,6 +709,7 @@ template {
   padding-left: 0 !important;
   padding-right: 0 !important;
   padding-bottom: 40px;
+  cursor: pointer;
 }
 
 .packages__item_active {
@@ -792,6 +808,7 @@ template {
   border: 1px solid #eeeeee;
   display: block;
   margin: auto;
+  cursor: pointer;
   outline: none !important;
 }
 
@@ -799,12 +816,28 @@ template {
   outline: none !important;
 }
 
+.packages__button:hover {
+  background-color: #d9d9d9;
+}
+
 .packages__button_active {
   -webkit-filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
           filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
   background-image: -webkit-gradient(linear, left top, right top, from(#fd712b), to(#f21680));
   background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
+  position: relative;
+}
+
+.packages__button_active::after {
   border: 3px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  display: block;
+  content: '';
+  width: 105%;
+  height: 117%;
+  top: -3px;
+  left: -3px;
+  border-radius: 20px;
 }
 
 .video {
@@ -994,6 +1027,13 @@ template {
       -ms-flex-align: baseline;
           align-items: baseline;
   padding-left: 135px !important;
+  cursor: pointer;
+}
+
+.download__item:hover {
+  background-color: #f7fafc;
+  -webkit-filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 .download__system {

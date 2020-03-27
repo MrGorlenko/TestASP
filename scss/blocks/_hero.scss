@@ -32,6 +32,7 @@
         list-style-type: none;
         padding-left: 0;
         margin-bottom: 35px;
+        cursor: pointer;
         li{
             &::before{
                 content: url('../../image/hero/list.png');
@@ -62,6 +63,9 @@
         outline: none !important;
         &:active &:focus{
             outline: none !important;
+        }
+        &:hover{
+            background-color: darken($color: #fff, $amount: 15);
         }
     }
 }
