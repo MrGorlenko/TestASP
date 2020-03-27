@@ -15,35 +15,35 @@
             z-index: 4;
         }
         &_second{
-            max-width: 25%;
-            margin-left: -183px;
-            margin-right: -180px;
+            max-width: 28%;
+            margin-left: -170px;
+            margin-right: -155px;
         }
         &_fifth{
-            max-width: 25%;
-            margin-right: -183px;
-            margin-left: -180px;
+            max-width: 28%;
+            margin-right: -170px;
+            margin-left: -155px;
             z-index: 3;
         }
         &_third{
-            max-width: 23%;
-            margin-left: -182px;
+            max-width: 26%;
+            margin-left: -170px;
         }
         &_sixth{
-            max-width: 23%;
-            margin-right: -182px;
+            max-width: 26%;
+            margin-right: -170px;
             z-index: 2;
         }
         &_forth, &_seventh {
-            max-width: 20%;
+            max-width: 24%;
         }
     }
     &__arrow{
         &_prev{
-            left: 85px;
+            left: -85px;
         }
         &_next{
-            right: 85px;
+            right: -85px;
         }
     }
 }
