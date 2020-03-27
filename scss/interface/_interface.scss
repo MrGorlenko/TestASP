@@ -96,3 +96,22 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    .row{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .section{
+        padding-top: 60px;
+        &__title{
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            font-size: 12px;
+            width: 85%;
+            margin-bottom: 60px;
+        }
+    }
+}

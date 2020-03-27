@@ -142,3 +142,43 @@
         }
     }
 }
+
+@media (max-width:768px){
+    .packages{
+        &__cost{
+            background-position-x: -6px;
+            background-position-y: 0px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .packages{
+        min-height: 2420px;
+        &__item{
+            max-width: 56% !important;
+            margin: auto;
+            max-height: 600px;
+            margin-bottom: 35px;
+        }
+        &__cost{
+            min-height: 90px;
+            width: 105%;
+            background-position-x: -5px;
+            background-position-y: -45px;
+            &_active{
+                background-position-y: -13px;
+                background-position-y: -9px;
+                width: 100%;
+                background-position-x: 0px;
+            }
+        }
+        &__price{
+            font-size: 30px;
+            margin-top: 22px;
+        }
+        &__info{
+            font-size: 14px;
+        }
+    }
+}

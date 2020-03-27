@@ -82,3 +82,14 @@
         }
     }
 }
+
+@media (max-width:576px){
+    .download{
+        min-height: 505px;
+        &__item{
+            max-width: 85% !important;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -123,3 +123,42 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    .features{
+        &__label{
+            font-size: 18px;
+        }
+        &__block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__unit{
+            &:last-child{
+                margin-top: 72px;
+            }
+        }
+        &__line{
+            width: 75%;
+        }
+        &__title{
+            font-size: 27px;
+            padding-left: 45px;
+        }
+        &__paragraph{
+            width: 87%;
+            text-align: justify;
+            padding-left: 45px;
+            font-size: 12px;
+            line-height: 21px;
+        }
+        &__list{
+            padding-left: 45px;
+            li{
+                margin-bottom: 11px;
+            }
+        }
+    }
+}

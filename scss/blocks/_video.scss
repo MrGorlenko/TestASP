@@ -33,3 +33,15 @@
         }
     }
 }
+
+@media (max-width:992px){
+    .video{
+        background-position-y: -15px;
+    }
+}
+
+@media (max-width:576px){
+    .video{
+        background-position-y: 0;
+    }
+}

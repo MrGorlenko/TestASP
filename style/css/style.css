@@ -97,6 +97,31 @@
   }
 }
 
+@media (max-width: 576px) {
+  .hero {
+    min-height: 570px;
+    background-position-x: -350px;
+  }
+  .hero__title {
+    line-height: 33px;
+    font-size: 27px;
+  }
+  .hero__subtitle {
+    font-size: 11px;
+    line-height: 21px;
+  }
+  .hero__list {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .hero__button {
+    font-size: 12px;
+    line-height: 25px;
+    width: 160px;
+    height: 35px;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -603,6 +628,25 @@ template {
   }
 }
 
+@media (max-width: 576px) {
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .section {
+    padding-top: 60px;
+  }
+  .section__title {
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .section__subtitle {
+    font-size: 12px;
+    width: 85%;
+    margin-bottom: 60px;
+  }
+}
+
 .features {
   padding-bottom: 0 !important;
 }
@@ -737,6 +781,50 @@ template {
   }
   .features__shadow {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .features__label {
+    font-size: 18px;
+  }
+  .features__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features__unit:last-child {
+    margin-top: 72px;
+  }
+  .features__line {
+    width: 75%;
+  }
+  .features__title {
+    font-size: 27px;
+    padding-left: 45px;
+  }
+  .features__paragraph {
+    width: 87%;
+    text-align: justify;
+    padding-left: 45px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+  .features__list {
+    padding-left: 45px;
+  }
+  .features__list li {
+    margin-bottom: 11px;
   }
 }
 
@@ -1004,6 +1092,44 @@ template {
   }
 }
 
+@media (max-width: 768px) {
+  .packages__cost {
+    background-position-x: -6px;
+    background-position-y: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .packages {
+    min-height: 2420px;
+  }
+  .packages__item {
+    max-width: 56% !important;
+    margin: auto;
+    max-height: 600px;
+    margin-bottom: 35px;
+  }
+  .packages__cost {
+    min-height: 90px;
+    width: 105%;
+    background-position-x: -5px;
+    background-position-y: -45px;
+  }
+  .packages__cost_active {
+    background-position-y: -13px;
+    background-position-y: -9px;
+    width: 100%;
+    background-position-x: 0px;
+  }
+  .packages__price {
+    font-size: 30px;
+    margin-top: 22px;
+  }
+  .packages__info {
+    font-size: 14px;
+  }
+}
+
 .video {
   width: 100%;
   min-height: 400px;
@@ -1048,6 +1174,18 @@ template {
 
 .video__play:active .video__play:focus {
   outline: none !important;
+}
+
+@media (max-width: 992px) {
+  .video {
+    background-position-y: -15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .video {
+    background-position-y: 0;
+  }
 }
 
 .feedback__slider {
@@ -1224,6 +1362,21 @@ template {
   }
 }
 
+@media (max-width: 768px) {
+  .feedback__item {
+    margin: auto;
+  }
+  .feedback__item:nth-child(2) {
+    display: none;
+  }
+  .feedback__arrow_prev {
+    left: 50px;
+  }
+  .feedback__arrow_next {
+    right: 50px;
+  }
+}
+
 .download {
   background-image: -webkit-gradient(linear, left top, right top, from(#fd712b), to(#f21680));
   background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
@@ -1325,6 +1478,17 @@ template {
   }
   .download__item {
     max-width: 49% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .download {
+    min-height: 505px;
+  }
+  .download__item {
+    max-width: 85% !important;
+    margin: auto;
+    margin-bottom: 10px;
   }
 }
 
