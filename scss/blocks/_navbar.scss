@@ -39,3 +39,24 @@
         }
     }
 }
+
+@media (max-width: 992px){
+    .navbar{
+        &__link{
+            &_home{
+                max-width: 17%;
+            }
+            &_download{
+                max-width: 29%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        &__logo{
+            display: none;
+        }
+    }
+}

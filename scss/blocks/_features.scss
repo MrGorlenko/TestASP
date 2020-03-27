@@ -1,5 +1,5 @@
 .features{
-    padding-top: 120px;
+    padding-bottom: 0 !important;
     &__unit{
         position: relative;
         &:last-child{
@@ -62,6 +62,64 @@
                 content: url('../../image/features/features-icon.png');
                 margin-right: 25px;
             }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .features{
+        &__label{
+            font-size: 20px;
+            width: 200px;
+        }
+        &__sublabel{
+            width: 220px;
+            font-size: 12px;
+        }
+        &__paragraph{
+            width: 460px;
+        }
+    }
+}
+
+@media (max-width:992px){
+    .features{
+        &__line{
+            margin-bottom: 60px;
+        }
+        &__paragraph{
+            width: 100%;
+            &_last{
+                margin-top: 15px;
+            }
+        }
+        &__list{
+            font-size: 12px;
+            li{
+                display: flex;
+                &::before{
+                    margin-right: 8px;
+                }
+            }
+        }
+        &__shadow{
+            width: 50%;
+            margin-left: 110px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .features{
+        padding-bottom: 60px !important;
+        &__block{
+            height: 275px;
+        }
+        &__iphone{
+            display: none;
+        }
+        &__shadow{
+            display: none;
         }
     }
 }

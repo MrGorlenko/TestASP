@@ -1,5 +1,4 @@
 .screenshots{
-    padding-top: 120px;
     background-color: #f7fafc;
     padding-bottom: 85px;
     &__slider{
@@ -45,6 +44,54 @@
         }
         &_next{
             right: -85px;
+        }
+    }
+}
+
+@media (max-width: 1350px){
+    .screenshots{
+        &__slider{
+            max-width: 1050px;
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    .screenshots{
+        &__slider{
+            max-width: 850px;
+            margin: auto;
+        }
+        &__item{
+            &_first{
+                max-width: 30%;
+            }
+        }
+        &__arrow{
+            &_prev{
+                left: 60px;
+            }
+            &_next{
+                right: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .screenshots{
+        &__item{
+            &_first{
+                max-width: 36%;
+            }
+            &_third{
+                max-width: 26%;
+                margin-left: -210px;
+            }
+            &_sixth{
+                max-width: 26%;
+                margin-right: -210px;
+            }
         }
     }
 }

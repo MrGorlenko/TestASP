@@ -1,7 +1,5 @@
 .download{
     background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
-    padding-top: 120px;
-    padding-bottom: 120px;
     &__title{
         color: #fff;
     }
@@ -48,5 +46,39 @@
         font-family: "Roboto";
         font-weight: 300;
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1200px){
+    .download{
+        &__item{
+            max-width: 300px !important;
+            height: 95px;
+            padding-left: 100px !important;
+        }
+        &__system{
+            width: 85px;
+        }
+        &__label{
+            font-size: 26px;
+        }
+        &__sublabel{
+            font-size: 12px;
+        }
+        &__slider{
+            max-width: 930px;
+            margin: auto !important;
+        }
+    }
+}
+
+@media (max-width: 992px){
+    .download{
+        &__slider{
+            height: 225px;
+        }
+        &__item{
+            max-width: 49% !important;
+        }
     }
 }
