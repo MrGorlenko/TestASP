@@ -95,3 +95,13 @@
         }
     }
 }
+
+@media (max-width: 540px){
+    .screenshots{
+        &__item{
+            &_second, &_fifth, &_third, &_forth, &_sixth, &_seventh{
+                display: none;
+            }
+        }
+    }
+}

@@ -122,6 +122,25 @@
   }
 }
 
+@media (max-width: 440px) {
+  .hero {
+    min-height: 575px;
+  }
+  .hero__title {
+    font-size: 21px;
+    width: 90%;
+  }
+  .hero__subtitle {
+    line-height: 18px;
+  }
+  .hero__phones {
+    top: 235px;
+  }
+  .hero__list {
+    font-size: 10px;
+  }
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -533,6 +552,12 @@ template {
   }
 }
 
+@media (max-width: 440px) {
+  .navbar__link {
+    font-size: 12px;
+  }
+}
+
 .container {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -643,7 +668,26 @@ template {
   .section__subtitle {
     font-size: 12px;
     width: 85%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .section__title {
+    font-size: 24px;
+  }
+  .slider__arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .slider__arrow_prev div {
+    top: 11px;
+    left: 7px;
+  }
+  .slider__arrow_next div {
+    top: 11px;
+    left: 8px;
   }
 }
 
@@ -788,6 +832,11 @@ template {
   .features__label {
     font-size: 18px;
   }
+  .features__icon {
+    width: 65px;
+    height: 65px;
+    left: 15px;
+  }
   .features__block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,6 +871,7 @@ template {
   }
   .features__list {
     padding-left: 45px;
+    width: 90%;
   }
   .features__list li {
     margin-bottom: 11px;
@@ -929,6 +979,12 @@ template {
   .screenshots__item_sixth {
     max-width: 26%;
     margin-right: -210px;
+  }
+}
+
+@media (max-width: 540px) {
+  .screenshots__item_second, .screenshots__item_fifth, .screenshots__item_third, .screenshots__item_forth, .screenshots__item_sixth, .screenshots__item_seventh {
+    display: none;
   }
 }
 
@@ -1101,7 +1157,7 @@ template {
 
 @media (max-width: 576px) {
   .packages {
-    min-height: 2420px;
+    min-height: 2480px;
   }
   .packages__item {
     max-width: 56% !important;
@@ -1110,16 +1166,14 @@ template {
     margin-bottom: 35px;
   }
   .packages__cost {
-    min-height: 90px;
-    width: 105%;
-    background-position-x: -5px;
-    background-position-y: -45px;
+    background-color: #fff;
+    background-image: none;
   }
   .packages__cost_active {
-    background-position-y: -13px;
-    background-position-y: -9px;
-    width: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#fd712b), to(#f21680));
+    background-image: linear-gradient(90deg, #fd712b 0%, #f21680 100%);
     background-position-x: 0px;
+    background-position-y: 25px;
   }
   .packages__price {
     font-size: 30px;
@@ -1374,6 +1428,22 @@ template {
   }
   .feedback__arrow_next {
     right: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback__item {
+    max-width: 230px !important;
+  }
+  .feedback__paragraph {
+    width: 185px;
+    text-align: justify;
+  }
+  .feedback__arrow_prev {
+    left: 10px;
+  }
+  .feedback__arrow_next {
+    right: 10px;
   }
 }
 

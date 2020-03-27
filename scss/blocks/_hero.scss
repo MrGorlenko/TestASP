@@ -116,3 +116,22 @@
         }
     }
 }
+
+@media (max-width:440px){
+    .hero{
+        min-height: 575px;
+        &__title{
+            font-size: 21px;
+            width: 90%;
+        }
+        &__subtitle{
+            line-height: 18px;
+        }
+        &__phones{
+            top: 235px;
+        }
+        &__list{
+            font-size: 10px;
+        }
+    }
+}

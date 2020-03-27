@@ -129,6 +129,11 @@
         &__label{
             font-size: 18px;
         }
+        &__icon{
+            width: 65px;
+            height: 65px;
+            left: 15px;
+        }
         &__block{
             display: flex;
             flex-direction: column;
@@ -156,6 +161,7 @@
         }
         &__list{
             padding-left: 45px;
+            width: 90%;
             li{
                 margin-bottom: 11px;
             }

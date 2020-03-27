@@ -187,3 +187,23 @@
         }
     }
 }
+
+@media (max-width: 576px){
+    .feedback{
+        &__item{
+            max-width: 230px !important;
+        }
+        &__paragraph{
+            width: 185px;
+            text-align: justify;
+        }
+        &__arrow{
+            &_prev{
+                left: 10px;
+            }
+            &_next{
+                right: 10px;
+            }
+        }
+    }
+}
