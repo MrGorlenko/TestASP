@@ -2,9 +2,48 @@
     padding-top: 120px;
     background-color: #f7fafc;
     padding-bottom: 85px;
-    &__image{
-        width: 80%;
-        margin: auto;
-        display: block;
+    &__slider{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__item{
+        filter: drop-shadow(0px 30px 20px rgba(0,0,0,0.1));
+        &_first{
+            z-index: 4;
+        }
+        &_second{
+            max-width: 25%;
+            margin-left: -183px;
+            margin-right: -180px;
+        }
+        &_fifth{
+            max-width: 25%;
+            margin-right: -183px;
+            margin-left: -180px;
+            z-index: 3;
+        }
+        &_third{
+            max-width: 23%;
+            margin-left: -182px;
+        }
+        &_sixth{
+            max-width: 23%;
+            margin-right: -182px;
+            z-index: 2;
+        }
+        &_forth, &_seventh {
+            max-width: 20%;
+        }
+    }
+    &__arrow{
+        &_prev{
+            left: 85px;
+        }
+        &_next{
+            right: 85px;
+        }
     }
 }
